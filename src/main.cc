@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
     return 0;
   }
   bool trace = false;
-  if (strcmp(argv[2], "-t") == 0) {
+  if (argc == 3 && strcmp(argv[2], "-t") == 0) {
     trace = true;
   }
   Automaton automaton(argv[1]);
